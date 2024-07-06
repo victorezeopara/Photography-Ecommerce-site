@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<main class="gallery-container">
+  <h1>Photo Gallery</h1>
+  <div class="gallery-scroll">
+    <div id="gallery" class="gallery">
+      <% images.forEach(image => { %>
+      <div class="card">
+        <img
+          src="<%= image.url %>"
+          alt="<%= image.title %>"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title"><%= image.title %></h3>
+          <% if (image.description) { %>
+          <p class="card-description"><%= image.description %></p>
+          <% } %>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+  <button class="nav-button prev-button">&larr;</button>
+  <button class="nav-button next-button">&rarr;</button>
+</main>
+
+<%- include('partials/footer') %>

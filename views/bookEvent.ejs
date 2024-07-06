@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+<section class="hero">
+  <div class="booking-form-container">
+    <h2>Book Your Photography Session</h2>
+    <form action="booksession" method="POST" class="booking-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="session-type">Session Type</label>
+        <select id="session-type" name="sessionType" required>
+          <option value="">Select a session type</option>
+          <option value="portrait">Portrait</option>
+          <option value="family">Family</option>
+          <option value="wedding">Wedding</option>
+          <option value="event">Event</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required />
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Book Session</button>
+    </form>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
