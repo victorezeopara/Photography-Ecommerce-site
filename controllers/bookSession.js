@@ -36,8 +36,8 @@ router.use("/", async function (req, res, next) {
     // console.log("Document written with ID: ", docRef.id);
 
     const mailOptions = {
-      from: "emmanuel.sheshi101@gmail.com",
-      to: "emmanuel.sheshi@gmail.com",
+      from: "oparavictoreze@gmail.com",
+      to: "oparavictoreze@gmail.com",
       subject: "New Booking Notification",
       html: `
     <!DOCTYPE html>
