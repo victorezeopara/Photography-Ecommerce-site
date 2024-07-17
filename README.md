@@ -1,2 +1,3 @@
 # Photography
-Simple mern stack page to help a small photography Business contact their clients
+Simple Express Node and Firebase stack application to help my small photography Business contact our clients
+
